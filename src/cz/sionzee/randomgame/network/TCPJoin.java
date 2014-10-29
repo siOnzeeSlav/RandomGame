@@ -1,7 +1,7 @@
 package cz.sionzee.randomgame.network;
 
 import javax.swing.*;
-import java.io.IOException;
+import java.io.*;
 import java.net.Socket;
 
 /**
@@ -11,6 +11,8 @@ public class TCPJoin {
 
     String clientToken;
     Socket socket;
+    OutputStream output;
+    InputStream input;
 
     public TCPJoin(String ip) {
 
@@ -20,7 +22,20 @@ public class TCPJoin {
             e.printStackTrace();
         }
 
-        if(socket)
+        try {
+            output = socket.getOutputStream();
+            input = socket.getInputStream();
+            output.write(TCPContants.ASK_FOR_TOKEN);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
+        InputStreamReader ioRead = new InputStreamReader(input);
+        BufferedReader reader = new BufferedReader(ioRead);
+        try {
+            clientToken = reader.readLine();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
