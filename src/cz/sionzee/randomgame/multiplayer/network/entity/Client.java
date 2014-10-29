@@ -1,6 +1,6 @@
-package cz.sionzee.randomgame.network.entity;
+package cz.sionzee.randomgame.multiplayer.network.entity;
 
-import cz.sionzee.randomgame.network.TCPCreate;
+import cz.sionzee.randomgame.multiplayer.network.TCPCreate;
 
 import java.io.BufferedReader;
 import java.io.IOException;

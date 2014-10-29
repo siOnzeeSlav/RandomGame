@@ -1,6 +1,5 @@
-package cz.sionzee.randomgame.network;
+package cz.sionzee.randomgame.multiplayer.network;
 
-import javax.swing.*;
 import java.io.*;
 import java.net.Socket;
 

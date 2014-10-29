@@ -1,6 +1,6 @@
 package cz.sionzee.randomgame.buttons;
 
-import cz.sionzee.randomgame.network.TCPJoin;
+import cz.sionzee.randomgame.multiplayer.network.TCPJoin;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;

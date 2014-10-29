@@ -1,6 +1,6 @@
-package cz.sionzee.randomgame.network;
+package cz.sionzee.randomgame.multiplayer.network;
 
-import cz.sionzee.randomgame.network.entity.Client;
+import cz.sionzee.randomgame.multiplayer.network.entity.Client;
 
 import java.io.IOException;
 import java.net.ServerSocket;

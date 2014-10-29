@@ -1,4 +1,4 @@
-package cz.sionzee.randomgame.network;
+package cz.sionzee.randomgame.multiplayer.network;
 
 /**
  * Created by sionzee on 29. 10. 2014.
